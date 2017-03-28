@@ -1,0 +1,27 @@
+//
+//  ridingOnFoot.pch
+//  ridingOnFoot
+//
+//  Created by 刘京涛 on 16/3/30.
+//  Copyright © 2016年 刘京涛. All rights reserved.
+//
+
+#ifndef ridingOnFoot_pch
+#define ridingOnFoot_pch
+////自定义blog
+#ifdef DEBUG
+#define PSYLog(...) NSLog(@"%s %d \n %@\n\n",__func__,__LINE__,[NSString stringWithFormat:__VA_ARGS__])
+
+#else
+#define PSYLog(...)
+#endif
+
+//release模式下去掉NSLog
+#ifndef __OPTIMIZE__
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...) {}
+#endif
+
+
+#endif /* ridingOnFoot_pch */

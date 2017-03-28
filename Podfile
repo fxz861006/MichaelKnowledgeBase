@@ -1,0 +1,6 @@
+pod 'BaiduMapKit'
+pod 'SDWebImage'
+pod 'AFNetworking'
+pod 'MBProgressHUD'
+pod 'MJRefresh'
+pod 'UMengSocial'

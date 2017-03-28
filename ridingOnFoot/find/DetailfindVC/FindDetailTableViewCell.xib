@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="FindDetailTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="572" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="572" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IGE-Ge-VRb">
+                        <rect key="frame" x="10" y="10" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="IGE-Ge-VRb" secondAttribute="height" id="cHP-lN-eyK"/>
+                            <constraint firstAttribute="width" constant="15" id="kKt-2m-M19"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="中国银行" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKp-dD-FE7">
+                        <rect key="frame" x="87" y="10" width="56" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="集合地" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iAg-TX-G1f">
+                        <rect key="frame" x="35" y="10" width="42" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="lKp-dD-FE7" firstAttribute="top" secondItem="IGE-Ge-VRb" secondAttribute="top" id="KSc-6p-a8p"/>
+                    <constraint firstItem="lKp-dD-FE7" firstAttribute="top" secondItem="iAg-TX-G1f" secondAttribute="top" id="Tyb-Hq-gNb"/>
+                    <constraint firstItem="lKp-dD-FE7" firstAttribute="bottom" secondItem="IGE-Ge-VRb" secondAttribute="bottom" id="Ud5-mP-0Ay"/>
+                    <constraint firstItem="lKp-dD-FE7" firstAttribute="leading" secondItem="iAg-TX-G1f" secondAttribute="trailing" constant="10" id="VPx-1o-i5i"/>
+                    <constraint firstItem="iAg-TX-G1f" firstAttribute="bottom" secondItem="IGE-Ge-VRb" secondAttribute="bottom" id="WHq-ZA-wx3"/>
+                    <constraint firstItem="iAg-TX-G1f" firstAttribute="leading" secondItem="IGE-Ge-VRb" secondAttribute="trailing" constant="10" id="cMg-LU-upa"/>
+                    <constraint firstAttribute="bottom" secondItem="IGE-Ge-VRb" secondAttribute="bottom" constant="15" id="hJl-FU-4TK"/>
+                    <constraint firstItem="IGE-Ge-VRb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="hQk-IY-Oew"/>
+                    <constraint firstItem="iAg-TX-G1f" firstAttribute="top" secondItem="IGE-Ge-VRb" secondAttribute="top" id="iM1-ba-nwR"/>
+                    <constraint firstItem="iAg-TX-G1f" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="pgo-GH-fNa"/>
+                    <constraint firstItem="IGE-Ge-VRb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="vox-79-msd"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="hJl-FU-4TK"/>
+                        <exclude reference="WHq-ZA-wx3"/>
+                        <exclude reference="iM1-ba-nwR"/>
+                        <exclude reference="KSc-6p-a8p"/>
+                        <exclude reference="Ud5-mP-0Ay"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="labelContent" destination="lKp-dD-FE7" id="eDp-qk-P18"/>
+                <outlet property="labelOrder" destination="iAg-TX-G1f" id="5vc-v5-h2h"/>
+                <outlet property="picImageView" destination="IGE-Ge-VRb" id="Jap-23-jnw"/>
+            </connections>
+            <point key="canvasLocation" x="248" y="336"/>
+        </tableViewCell>
+    </objects>
+</document>
